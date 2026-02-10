@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio for Tyler Jarboe.",
+  "scripts": {
+    "build": "rm -rf public && mkdir public && cp -r src/* public/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BotTyler/Portfolio.git"
+  },
+  "author": "Tyler Jarboe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BotTyler/Portfolio/issues"
+  },
+  "homepage": "https://github.com/BotTyler/Portfolio#readme"
+}
