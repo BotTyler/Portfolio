@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Personal portfolio for Tyler Jarboe.",
   "scripts": {
-    "build": "rm -rf public && mkdir public && cp -r src/* public/",
+    "build": "cp -r src/* ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
