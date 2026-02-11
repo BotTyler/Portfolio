@@ -34,3 +34,26 @@ canvas {
   image-rendering: crisp-edges;
   pointer-events: all;
 }
+
+.signal-down {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%, 0);
+  animation: bounce 2.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}

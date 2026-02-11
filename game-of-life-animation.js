@@ -140,6 +140,22 @@ intro_overlay.addEventListener('mousemove', e => {
   }
 });
 
+window.addEventListener("touchmove", (e) => {
+  const rect = canvas.getBoundingClientRect();
+  const touch = e.touches;
+  if (touch.length === 0) return;
+  const mouseX = Math.floor((touch[0].clientX - rect.left) * (cols / rect.width));
+  const mouseY = Math.floor((touch[0].clientY - rect.top) * (rows / rect.height));
+
+  for (let row = mouseY - mouseRadius; row <= mouseY + mouseRadius; row++) {
+    for (let col = mouseX - mouseRadius; col <= mouseX + mouseRadius; col++) {
+      const r = (row + rows) % rows;
+      const c = (col + cols) % cols;
+      if (Math.random() < 0.5) grid[r][c] = 1;
+    }
+  }
+})
+
 // Start the animation
 format_grid();
 requestAnimationFrame(loop);
