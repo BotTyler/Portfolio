@@ -10,6 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <script defer src="./spin-animation.js"></script>
   <script defer src="./game-of-life-animation.js"></script>
+  <script defer src="./Resume-Display.js"></script>
 </head>
 
 <body class="bg-gray-900 text-white text-md lg:text-xl flex flex-col justify-center items-center">
@@ -306,8 +307,7 @@
   <div class="w-full h-[100vh] mt-30 py-2 flex flex-col">
     <h1 class="text-5xl font-extrabold underline text-center w-full mb-7">Resume</h1>
     <div class="flex-auto p-3 flex justify-center items-center">
-      <iframe src="Assets/Resume.pdf" class="w-full md:w-[85%] xl:w-1/2 h-full overflow-hidden"
-        frameborder="1"></iframe>
+      <div id="resume-container" class="w-full md:w-[85%] xl:w-1/2 h-full overflow-hidden"></div>
     </div>
   </div>
 
