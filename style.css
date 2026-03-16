@@ -55,7 +55,3 @@ canvas {
     transform: translate(50%, 0);
   }
 }
-
-img {
-  aspect-ratio: 1 / 1;
-}
